@@ -25,14 +25,12 @@ char shift_char(char c, int shift) {
 string caesar_encrypt(const string &plaintext, int shift) {
     string ciphertext;
     for (char c : plaintext) {
-        
         ciphertext += shift_char(c, shift);
     }
     return ciphertext;
 }
 
 string caesar_decrypt(const string &ciphertext, int shift) {
-    
     return caesar_encrypt(ciphertext, -shift);
 }
 
